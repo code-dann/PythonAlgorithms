@@ -1,13 +1,12 @@
 def read():
-    numbers=[]
-    with open('./Archivos/numbers.txt', 'r', encoding='utf-8') as f:
-        for i in f:
-            numbers.append(int(i))
-    print(numbers)        
+    #numbers=[]
+    #with open('./Archivos/numbers.txt', 'r', encoding='utf-8') as f:
+    #    for i in f:
+   #         numbers.append(int(i))
+   numbers =  list(map(lambda x: int(x),  open('./Archivos/numbers.txt', 'r', encoding='utf-8')))
+   print(numbers)        
 
 
-
-print(num)
 def write():
     names=['Facundo','Miguel','Chucho','Christian','Majo']
     with open('./Archivos/names.txt', 'w', encoding='utf-8') as f:
